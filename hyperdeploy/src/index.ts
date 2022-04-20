@@ -27,6 +27,10 @@ export function firebaseDeploy(config: {
    * Programmatic deploys use source cwd by default.
    * To fix this, we explicitly change cwd on process first.
    */
+     /**
+   * Programmatic deploys use source cwd by default.
+   * To fix this, we explicitly change cwd on process first.
+   */
   process.chdir(cwd);
   return deploy({
     project,
